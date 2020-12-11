@@ -16,6 +16,9 @@ const debug = debugLib('es6-api-express:server');
 const port = normalizePort(process.env.PORT || '3000');
 app.set('port', port);
 
+// show in console
+console.log(`ENV: ${process.env.NODE_ENV} | running in port: ${port}\n`);
+
 /**
  * Create HTTP server.
  */

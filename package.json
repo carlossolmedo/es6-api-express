@@ -6,7 +6,7 @@
     "transpile": "babel ./server --out-dir dist",
     "clean": "rimraf dist",
     "build": "npm-run-all clean transpile",
-    "server": "node ./dist/app.js",
+    "server": "node ./dist/bin/www",
     "prod": "NODE_ENV=production npm-run-all build server",
     "dev": "NODE_ENV=development npm-run-all build server",
     "start": "npm run prod",
